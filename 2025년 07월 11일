@@ -1,0 +1,36 @@
+2025년 07월 11일
+
+스프링 구조
+core-project/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/example/coreproject/
+│   │   │       └── CoreProjectApplication.java
+│   │   └── resources/
+│   │       └── application.properties
+│   └── test/
+│       └── java/
+│           └── com/example/coreproject/
+│               └── CoreProjectApplicationTests.java
+├── mvnw
+├── mvnw.cmd
+├── pom.xml
+└── .gitignore
+
+
+@Controller // JSP같은 뷰를 핸들링하는 컨트롤러
+//@RestController // JSON을 리턴하는 컨트롤러
+@RequestMapping("/chap2-2")//로컬주소:포트주소/chap2-2 일때 실행함
+// 핸들러 메서드 (각 요청을 전담처리)
+/*
+    * GET     : 조회
+    * POST    : 생성
+    * PUT     : 수정
+    * DELETE  : 삭제
+    * */
+@Getter @Setter @ToString
+@EqualsAndHashCode
+@NoArgsConstructor // 기본 생성자
+@AllArgsConstructor
+보일러 코드 자동생성 호출
